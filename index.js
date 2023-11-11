@@ -1,6 +1,7 @@
 const express = require('express');
 const app= express();
 const dotenv = require('dotenv');
+const jobs=require("./routes/Jobs")
 
 
 dotenv.config({path : './config/config.env'})
@@ -11,6 +12,7 @@ app.get('/', (req, res) => {
     res.send('hello world from jobee')
 });
 
+app.use('/api/v1',jobs);
 
 
 
