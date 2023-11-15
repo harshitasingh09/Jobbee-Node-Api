@@ -12,7 +12,7 @@ exports.newJob =async (req,res, next)=>{
     res.status(200).json(
         {
             success: true,
-            message: "job Created",
+            message: jobs.length,
             data: jobs,
         }
     )
