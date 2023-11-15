@@ -10,13 +10,8 @@ const PORT= process.env.PORT;
 
 connectDatabase();
 
-
-// app.get('/', (req, res) => {  
-//     res.send('hello world from jobee')
-// });
-
-// app.use('/api/v1',jobs);
-
+app.use(express.json());
+app.use("/api/v1", jobs);
 
 app.listen(PORT, ()=>{
     console.log(`server started on ${process.env.PORT}`);
