@@ -1,7 +1,7 @@
 const express = require('express');
 const app= express();
 const dotenv = require('dotenv');
-const jobs=require("./routes/Jobs")
+const jobs=require("./routes/Jobsroute")
 const connectDatabase = require('./config/database');
 
 
